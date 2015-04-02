@@ -1,0 +1,160 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Verdana, Geneva, sans-serif;
+}
+#wrap {
+	width: 1200px;
+	margin: 20px auto;
+}
+#calendar {
+	width: 800px;
+	margin: 10px;
+}
+#sidebar {
+	width: 380px;
+	margin-left: 820px;
+}
+
+#form {
+	width: 360px;
+	/* border: 1px dotted #666; */
+	padding: 10px 0;
+}
+#price {
+	padding: 20px 0;
+	margin-bottom: 10px;
+
+}
+#reservedDays {
+	margin-bottom: 20px;
+}
+#rateTitle {
+	width: 100%;
+	background-color: #005a68;
+	color: #e9eaaf;
+	font-size: 14px;
+	padding: 4px 6px;
+	margin-bottom: 6px;
+}
+#total {
+	margin-bottom: 20px;
+	font-size: 20px;
+}
+#addGuest {
+	margin: 10px 0;
+}
+
+.top-menu {
+	padding: 6px 20px;
+	margin: 4px;
+	background-color: #1c99af;
+	color: #fff;
+	cursor: pointer;
+}
+.top-menu:hover {
+	background-color: #00798c;
+	color: #e3e5e5;
+}
+.menu-active {
+	background-color: #005a68;
+	color: #e9eaaf;
+}
+.month {
+	width: 160px;
+	margin: 10px;
+	float: left;
+	border: 1px solid #666;
+}
+.monthName {
+	background-color: #005a68;
+	color: #e9eaaf;
+	text-align: center;
+}
+.week {
+	height: 20px;
+	width: 100%;
+	padding: 2px 0;
+	background-color: #ccc;
+}
+.week + .week {
+		border-top: 1px solid #666;
+}
+.daysTitle {
+	height: 14px;
+	width: 100%;
+	background-color: #ccc;
+}
+.weekDayTitle {
+	font-size: 8px;
+	float: left;
+	width: 22px;
+	border-bottom: 1px solid #666;
+}
+.weekDayTitle + .weekDayTitle {
+	border-left: 1px solid #666;
+}
+
+.cell {
+	width: 22px;
+	height: 100%;
+	float: left;
+}
+.cell + .cell {
+	border-left: 1px solid #666;
+}
+.day {
+	cursor:pointer;
+}
+.day:hover{
+	background-color: #a2d2db;
+}
+.active {
+	background-color: #005a68 !important;
+	color: #e9eaaf;
+}
+.addGuest {
+	cursor:pointer;
+}
+
+.reservedDate {
+	margin: 2px 1px;
+	font-size: 12px;
+	padding: 2px 4px;
+	min-width: 94px;
+	color: #333;
+	background-color: #f2f2f2;
+	display: inline-block;
+	cursor: pointer;
+}
+.removeDate {
+	margin-left: -6px;
+}
+.btn {
+	padding: 6px 60px;
+	margin-top: 20px;
+	background-color: #1c99af;
+	color: #fff;
+	cursor: pointer;
+	border:0;
+	font-size: 18px;
+}
+.btn:hover {
+	background-color: #00798c;
+	color: #e3e5e5;
+}
+
+
+/* Colors */
+.red {
+	color: #c92424;
+}
+.green {
+	color: #53ad27;
+}
+.weekend {
+	background-color: #ffffd1;
+}
+.highpeak {
+	background-color: #ffd1d1;
+}
