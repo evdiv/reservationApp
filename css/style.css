@@ -26,10 +26,10 @@ body {
 	margin-bottom: 10px;
 
 }
-#reservedDays {
+#reserved-days {
 	margin-bottom: 20px;
 }
-#rateTitle {
+#rate-title {
 	width: 100%;
 	background-color: #005a68;
 	color: #e9eaaf;
@@ -41,7 +41,7 @@ body {
 	margin-bottom: 20px;
 	font-size: 20px;
 }
-#addGuest {
+#add-guest {
 	margin: 10px 0;
 }
 
@@ -66,7 +66,7 @@ body {
 	float: left;
 	border: 1px solid #666;
 }
-.monthName {
+.month-name {
 	background-color: #005a68;
 	color: #e9eaaf;
 	text-align: center;
@@ -80,18 +80,18 @@ body {
 .week + .week {
 		border-top: 1px solid #666;
 }
-.daysTitle {
+.days-title {
 	height: 14px;
 	width: 100%;
 	background-color: #ccc;
 }
-.weekDayTitle {
+.weekday-title {
 	font-size: 8px;
 	float: left;
 	width: 22px;
 	border-bottom: 1px solid #666;
 }
-.weekDayTitle + .weekDayTitle {
+.weekday-title + .weekday-title {
 	border-left: 1px solid #666;
 }
 
@@ -103,21 +103,25 @@ body {
 .cell + .cell {
 	border-left: 1px solid #666;
 }
-.day {
+.date-available {
 	cursor:pointer;
 }
-.day:hover{
+.date-available:hover{
 	background-color: #a2d2db;
 }
 .active {
 	background-color: #005a68 !important;
 	color: #e9eaaf;
 }
-.addGuest {
+.date-booked {
+	background-color: #bc1c00 !important;
+	color: #fff !important;
+}
+.add-guest {
 	cursor:pointer;
 }
 
-.reservedDate {
+.reserved-date {
 	margin: 2px 1px;
 	font-size: 12px;
 	padding: 2px 4px;
@@ -127,7 +131,7 @@ body {
 	display: inline-block;
 	cursor: pointer;
 }
-.removeDate {
+.remove-date {
 	margin-left: -6px;
 }
 .btn {
