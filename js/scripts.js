@@ -2,7 +2,7 @@ $(document).ready(function() {
     var getData = function(condoId) {
         var id = condoId || '1';
 
-        $.getJSON("http://localhost/ReservationCalendar/api/", function(json) {
+        $.getJSON("http://localhost/reservationApp/api/", function(json) {
             for (var i = 0, len = json.length; i < len; i++) {
                     printCalendar(json[i]);
             }
