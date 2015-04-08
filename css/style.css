@@ -9,38 +9,55 @@ body {
 }
 #calendar {
 	width: 800px;
-	margin: 10px;
+	margin-top: 10px;
 }
 #sidebar {
 	width: 380px;
-	margin-left: 820px;
+	margin-left: 760px;
 }
 
 #form {
-	width: 360px;
+	width: 380px;
 	/* border: 1px dotted #666; */
 	padding: 10px 0;
 }
 #price {
-	padding: 20px 0;
-	margin-bottom: 10px;
+	margin: 20px 0;
+	width:100%;
 
 }
 #reserved-days {
 	margin-bottom: 20px;
 }
 #rate-title {
-	width: 100%;
+
 	background-color: #005a68;
 	color: #e9eaaf;
 	font-size: 14px;
 	padding: 4px 6px;
 	margin-bottom: 6px;
+	border-radius: 2px;
+}
+#subtotal {
+	font-size: 14px;
+	border-bottom: 1px dotted #ccc;
+	color: #666;
+}
+#taxes {
+	font-size: 14px;
+	border-bottom: 1px dotted #ccc;
+	color: #666;
 }
 #total {
+
+	border-bottom: 1px dotted #ccc;
 	margin-bottom: 20px;
-	font-size: 20px;
 }
+.sum-title {
+	display: inline-block;
+	width: 280px;
+}
+
 #add-guest {
 	margin: 10px 0;
 }
@@ -50,6 +67,7 @@ body {
 	margin: 4px;
 	background-color: #1c99af;
 	color: #fff;
+	border-radius: 2px;
 	cursor: pointer;
 }
 .top-menu:hover {
@@ -60,16 +78,23 @@ body {
 	background-color: #005a68;
 	color: #e9eaaf;
 }
+.year {
+	width: 700px;
+}
 .month {
-	width: 160px;
-	margin: 10px;
+	width: 217px;
+	height: 188px;
+	margin: 10px 5px;
 	float: left;
 	border: 1px solid #666;
+	border-radius: 2px;
 }
 .month-name {
 	background-color: #005a68;
 	color: #e9eaaf;
 	text-align: center;
+	font-size: 14px;
+	padding: 4px 6px;
 }
 .week {
 	height: 20px;
@@ -83,12 +108,13 @@ body {
 .days-title {
 	height: 14px;
 	width: 100%;
-	background-color: #ccc;
+	background-color: #e5e5e5;
 }
 .weekday-title {
 	font-size: 8px;
 	float: left;
-	width: 22px;
+	text-align: center;
+	width: 30px;
 	border-bottom: 1px solid #666;
 }
 .weekday-title + .weekday-title {
@@ -96,9 +122,10 @@ body {
 }
 
 .cell {
-	width: 22px;
+	width: 30px;
 	height: 100%;
 	float: left;
+	text-align: center;
 }
 .cell + .cell {
 	border-left: 1px solid #666;
@@ -135,10 +162,12 @@ body {
 	margin-left: -6px;
 }
 .btn {
-	padding: 6px 60px;
+	width: 100%;
+	padding: 10px 0;
 	margin-top: 20px;
 	background-color: #1c99af;
 	color: #fff;
+	border-radius: 2px;
 	cursor: pointer;
 	border:0;
 	font-size: 18px;

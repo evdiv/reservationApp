@@ -36,8 +36,19 @@
        </span>
    </div>
 
-    <div id="total" data-bind='visible: reservedDays().length > 0'>Total: $
-     <span data-bind='text: subtotal'></span>
+    <div id="subtotal" data-bind='visible: reservedDays().length > 0'>
+     <span class='sum-title'>Sub total:</span>
+     $<span class='sum-amount' data-bind='text: subtotal'></span>
+    </div>
+
+    <div id="taxes" data-bind='visible: reservedDays().length > 0'>
+     <span class='sum-title'>Taxes:</span>
+     $<span class='sum-amount' data-bind='text: taxes'></span>
+    </div>
+
+    <div id="total" data-bind='visible: reservedDays().length > 0'>
+     <span class='sum-title'>Total:</span>
+     $<span class='sum-amount' data-bind='text: total'></span>
     </div>
 
       <form name="reservationForm" acton="" method="post" />
@@ -109,6 +120,20 @@ var GuestsModel = function(condoId) {
             }
         }
         return total;
+    });
+
+    self.taxes = ko.pureComputed(function() {
+      var taxes = self.subtotal() * 0.13;
+      taxes = taxes.toFixed(2);
+
+      return taxes;
+    });
+
+    self.total = ko.pureComputed(function() {
+      var total = parseFloat(self.taxes()) + parseFloat(self.subtotal());
+
+      total = parseFloat(total).toFixed(2);
+      return total;
     });
 
    self.addGuest = function() {
@@ -222,17 +247,17 @@ var GuestsModel = function(condoId) {
 
         switch(condoId) {
             case "1":
-                self.weekDay(50);
-                self.weekEndDay(70);
+                self.weekDay(49);
+                self.weekEndDay(69);
                 self.hotSeason(95);
                 break;
             case "2":
-                self.weekDay(56);
+                self.weekDay(55);
                 self.weekEndDay(78);
                 self.hotSeason(115);
                 break;
             case "3":
-                self.weekDay(68);
+                self.weekDay(66);
                 self.weekEndDay(94);
                 self.hotSeason(135);
                 break;      

@@ -50,9 +50,17 @@ $(document).ready(function() {
         }
         for (i = 1; i < 13; i++) {
             //Show months only from current one
-            if (i < today.mm) {
+            // if (i < today.mm) {
+            //     continue;
+            // }
+
+            //for demo set current month equal to 4
+            if (i < 4) {
                 continue;
             }
+            //end for demo
+
+
             month = $('<div>').addClass('month').attr('data-month', i);
             dayOfMonth = 0;
             numWeeks = getNumberOfWeeks(today.yyyy, i);
